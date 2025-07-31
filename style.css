@@ -1,3 +1,5 @@
+/* Looking at my CSS? Just know there's not much useful stuff in here other than usual website styles. */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -51,7 +53,10 @@ main {
 footer {
   background-color: #333;
   color: #ccc;
-  text-align: center;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
   padding: 1rem;
   font-size: 0.9rem;
   height:30px;
