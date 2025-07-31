@@ -61,8 +61,11 @@ footer {
   font-size: 0.9rem;
   height:30px;
   position:fixed;
-  top: calc(100vh - 30px - 1rem);
+  top: calc(100vh - 30px - 2rem);
   left:0;
+  width:100vw;
+  padding-left:none;
+  padding-right:none;
 }
 
 footer a {
