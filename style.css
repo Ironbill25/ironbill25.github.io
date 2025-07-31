@@ -7,6 +7,34 @@ body {
   color: #333;
 }
 
+nav {
+  background-color: #333;
+  padding: 0.5rem 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00bcd4;
+}
+
 header {
   background-color: #222;
   color: #fff;
@@ -21,8 +49,19 @@ main {
 }
 
 footer {
+  background-color: #333;
+  color: #ccc;
   text-align: center;
   padding: 1rem;
-  background-color: #eee;
   margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
