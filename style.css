@@ -53,8 +53,11 @@ footer {
   color: #ccc;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
   font-size: 0.9rem;
+  height:30px;
+  position:fixed;
+  top: calc(100vh - 30px - 1rem);
+  left:0;
 }
 
 footer a {
