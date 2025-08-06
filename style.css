@@ -1,78 +1,88 @@
 /* Looking at my CSS? Just know there's not much useful stuff in here other than usual website styles. */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	background-color: #f9f9f9;
+	color: #333;
+	background-image: url("images/tiles.png");
 }
 
 nav {
-  background-color: #333;
-  padding: 0.5rem 0;
+	background-color: #333;
+	padding: 0.5rem 0;
 }
 
 .navbar {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar li {
-  margin: 0 1rem;
+	margin: 0 1rem;
 }
 
 .navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #00bcd4;
+	color: #00bcd4;
 }
 
 header {
-  background-color: #222;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
+	background-color: #222;
+	color: #fff;
+	padding: 2rem;
+	text-align: center;
 }
 
 main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+	padding: 2rem;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 5px;
+	background: radial-gradient(
+		circle,
+		rgba(0, 0, 0, 0.7) 0%,
+		rgba(0, 0, 0, 0.4) 90%
+	);
+	color: white;
+	border-radius: 10px;
 }
 
 footer {
-  background-color: #333;
-  color: #ccc;
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  height:30px;
-  position:fixed;
-  top: calc(100vh - 30px - 2rem);
-  left:0;
-  width:100vw;
-  padding-left:none;
-  padding-right:none;
+	background-color: #333;
+	color: #ccc;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	padding: 1rem;
+	font-size: 0.9rem;
+	height: 30px;
+	position: fixed;
+	top: calc(100vh - 30px - 2rem);
+	left: 0;
+	width: 100vw;
+	padding-left: none;
+	padding-right: none;
 }
 
 footer a {
-  color: #ccc;
-  text-decoration: none;
+	color: #ccc;
+	text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
