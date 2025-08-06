@@ -1,0 +1,19 @@
+{
+  "name": "swikkit",
+  "version": "1.0.0",
+  "description": "A lightweight, modular JavaScript framework for modern web development",
+  "main": "swikkit.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "framework",
+    "javascript",
+    "frontend",
+    "ui",
+    "components"
+  ],
+  "author": "IronBill25",
+  "license": "MIT"
+}

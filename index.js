@@ -1,1 +1,2 @@
-console.log("index.js not ready yet")
+import { $, $1 } from "./swikkit/swikkit.js"
+
