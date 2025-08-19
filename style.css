@@ -1,18 +1,37 @@
 /* Looking at my CSS? Just know there's not much useful stuff in here other than usual website styles. */
 
+:root {
+	--color-primary: #00bcd4;
+	--color-primary-hover: #0097a7;
+	--color-text: #333;
+	--color-text-light: #fff;
+	--bg-dark: #222;
+	--bg-darker: #333;
+	--bg-light: #f9f9f9;
+
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 2rem;
+
+	--transition: 0.3s;
+
+	--font-family: Arial, sans-serif;
+	--line-height: 1.6;
+}
+
 body {
-	font-family: Arial, sans-serif;
+	font-family: var(--font-family);
 	margin: 0;
 	padding: 0;
-	line-height: 1.6;
-	background-color: #f9f9f9;
-	color: #333;
+	line-height: var(--line-height);
+	background-color: var(--bg-light);
+	color: var(--color-text);
 	background-image: url("images/tiles.png");
 }
 
 nav {
-	background-color: #333;
-	padding: 0.5rem 0;
+	background-color: var(--bg-darker);
+	padding: var(--spacing-xs) 0;
 }
 
 .navbar {
@@ -24,39 +43,42 @@ nav {
 }
 
 .navbar li {
-	margin: 0 1rem;
+	margin: 0 var(--spacing-sm);
 }
 
 .navbar a {
-	color: #fff;
+	color: var(--color-text-light);
 	text-decoration: none;
 	font-weight: bold;
-	transition: color 0.3s;
+	transition: color var(--transition);
 }
 
 .navbar a:hover {
-	color: #00bcd4;
+	color: var(--color-primary);
 }
 
 header {
-	background-color: #222;
-	color: #fff;
-	padding: 2rem;
+	background-color: var(--bg-dark);
+	color: var(--color-text-light);
+	padding: var(--spacing-md);
 	text-align: center;
 }
 
 main {
-	padding: 2rem;
-	max-width: 800px;
+	padding: var(--spacing-md);
+	max-width: 1000px;
 	margin: auto;
 	margin-top: 5px;
-	background: radial-gradient(
-		circle,
-		rgba(0, 0, 0, 0.7) 0%,
-		rgba(0, 0, 0, 0.4) 90%
-	);
+	background: radial-gradient(circle,
+			rgba(0, 0, 0, 0.7) 0%,
+			rgba(0, 0, 0, 0.4) 90%);
 	color: white;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
 }
 
 footer {
@@ -79,10 +101,73 @@ footer {
 }
 
 footer a {
-	color: #ccc;
+	color: var(--color-primary);
 	text-decoration: none;
 }
 
 footer a:hover {
 	text-decoration: underline;
+}
+
+.project {
+	margin-bottom: var(--spacing-sm);
+}
+
+.project-list,
+.social-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.project-list li,
+.social-list li {
+	margin-bottom: var(--spacing-sm);
+}
+
+.project-list li a,
+.social-list li a {
+	text-decoration: none;
+}
+
+.project-list li a button,
+.social-list li a button {
+	color: var(--color-text) !important;
+}
+
+.project-list li a:hover,
+.social-list li a:hover {
+	text-decoration: underline;
+}
+
+.repo-btn,
+.social-btn {
+	background-color: var(--color-primary);
+	color: var(--color-text-light);
+	border: none;
+	padding: var(--spacing-xs) var(--spacing-sm);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color var(--transition);
+}
+
+.repo-btn:hover,
+.social-btn:hover {
+	background-color: var(--color-primary-hover);
+}
+
+.card-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.card-list li {
+	margin-bottom: 2px;
+}
+
+.game-info {
+	background-color: var(--bg-dark);
+	color: var(--color-text-light);
+	padding: var(--spacing-md);
 }

@@ -1,71 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="ie=edge" />
-		<title>IronBill25's Website</title>
-		<link
-			rel="stylesheet"
-			href="style.css" />
-	</head>
-	<body>
-		<nav>
-			<ul class="navbar">
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>IronBill25's Website</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+	<nav>
+		<ul class="navbar">
+			<li><a href="#about">About</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li>
+				<a href="https://github.com/IronBill25" target="_blank">GitHub</a>
+			</li>
+		</ul>
+	</nav>
+
+	<header>
+		<h1>Welcome to my website!</h1>
+		<p>
+			This site is almost ready! We're just finishing a few things and then
+			it'll be good to go.
+		</p>
+	</header>
+
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>
+				I'm IronBill25, a (kinda) experienced web developer that has a passion
+				for coding.
+			</p>
+		</section>
+
+		<section id="social">
+			<h2>Social</h2>
+			<p>Note: I currently don't have many ways for you to contact me. This will change in the near future.</p>
+			<ul class="social-list">
 				<li>
-					<a
-						href="https://github.com/IronBill25"
-						target="_blank"
-						>GitHub</a
-					>
+					<a href="https://github.com/IronBill25" target="_blank">
+						<button class="social-btn">GitHub</button>
+					</a>
+				</li>
+				<li>
+					<a href="https://scratch.mit.edu/users/IronBill05" target="_blank">
+						<button class="social-btn">Scratch</button>
+					</a>
 				</li>
 			</ul>
-		</nav>
+		</section>
 
-		<header>
-			<h1>Welcome to my website!</h1>
-			<p>
-				This site is almost ready! We're just finishing a few things and then
-				it'll be good to go.
-			</p>
-		</header>
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul class="project-list">
+				<li class="project">
+					<strong>EUIL</strong> — GUI for Python via XML.
+					<br />
+					<a href="https://github.com/IronBill25/euil" target="_blank">
+						<button class="repo-btn">View on GitHub</button>
+					</a>
+				</li>
 
-		<main>
-			<section id="about">
-				<h2>About Me</h2>
-				<p>
-					I'm IronBill25, a (kinda) experienced web developer that has a passion
-					for coding.
-				</p>
-			</section>
+				<li class="project">
+					<strong>JESX</strong> — A framework for building websites with just
+					JavaScript.
+					<br />
+					<a href="https://github.com/IronBill25/jesx" target="_blank">
+						<button class="repo-btn">View on GitHub</button>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
 
-			<section id="projects">
-				<h2>Projects</h2>
-				<ul class="project-list">
-					<li><strong>EUIL</strong> — GUI for Python via XML.</li>
-					<li>
-						<strong>JESX</strong> — A framework for building websites with just
-						JavaScript.
-					</li>
-				</ul>
-			</section>
-		</main>
+	<footer>
+		<p>&copy; 2025 IronBill25. Built with... uh... a computer.</p>
+		<img src="images/cooldevbadge.png" height="60" />
+	</footer>
 
-		<footer>
-			<p>&copy; 2025 IronBill25. Built with... uh... a computer.</p>
-			<img
-				src="images/cooldevbadge.png"
-				height="60" />
-		</footer>
+	<script src="index.js" type="module"></script>
+</body>
 
-		<script
-			src="index.js"
-			type="module"></script>
-	</body>
 </html>
