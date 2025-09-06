@@ -171,3 +171,29 @@ footer a:hover {
 	color: var(--color-text-light);
 	padding: var(--spacing-md);
 }
+
+.download-button {
+	background-color: var(--color-primary);
+	color: var(--color-text-light);
+	border: none;
+	padding: var(--spacing-xs) var(--spacing-sm);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color var(--transition);
+}
+
+.download-button:hover {
+	background-color: var(--color-primary-hover);
+}
+
+.project {
+	border-radius: 5px;
+	border: 1px solid var(--color-primary);
+	background-color: var(--bg-dark);
+	color: var(--color-text-light);
+	padding: var(--spacing-md);
+}
+
+main {
+	padding-bottom: 8rem;
+}

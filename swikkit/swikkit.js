@@ -6,13 +6,16 @@
 // (c) 2025 IronBill25
 
 // Import core modules
-import { $ as domQuery } from './modules/dom.js';
+import { $ as domQuery, $1 as domQuery1 } from './modules/dom.js';
 import * as utils from './modules/utility.js';
 import { registerElement } from './modules/custom-tags.js';
 
 // Main Swikkit function
 function $(selector, context = document) {
     return domQuery(selector, context);
+}
+function $1(selector, context = document) {
+    return domQuery1(selector, context);
 }
 
 // Attach utilities
@@ -34,4 +37,4 @@ if (document.readyState === 'loading') {
 }
 
 // Export the main function
-export default $;
+export {$, $1};
