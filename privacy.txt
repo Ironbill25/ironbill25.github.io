@@ -1,0 +1,44 @@
+PRIVACY POLICY
+Last Updated: October 4, 2025
+
+1. INTRODUCTION
+This Privacy Policy explains how IronBill25 ("we," "us," or "our") collects, uses, and protects your personal information when you visit our website (the "Site").
+By using the Site, you agree to the collection and use of information in accordance with this policy.
+
+2. INFORMATION WE COLLECT
+We collect minimal personal information, which may include:
+- Basic usage data (pages visited, time spent on site)
+- Information provided through contact forms (if any)
+- Browser type and version
+- IP address (anonymized where possible)
+
+3. HOW WE USE YOUR INFORMATION
+We use the collected information to:
+- Improve and maintain the Site
+- Analyze site usage and performance
+- Respond to inquiries (if applicable)
+- Ensure the security of our Site
+
+4. COOKIES AND TRACKING
+This Site uses minimal cookies for essential functions only.
+We do not use third-party tracking cookies or analytics services that collect personal data.
+
+5. DATA SHARING
+We do not sell, trade, or rent your personal information to third parties.
+We may share aggregated, non-personal information for site analytics purposes.
+
+6. DATA SECURITY
+We implement appropriate security measures to protect against unauthorized access, alteration, or destruction of your personal information.
+
+7. EXTERNAL LINKS
+Our Site may contain links to external sites.
+We are not responsible for the content or privacy practices of these sites.
+
+8. CHANGES TO THIS PRIVACY POLICY
+We may update this Privacy Policy from time to time.
+The updated policy will be posted on this page with a new "Last Updated" date.
+
+9. CONTACT US
+For any questions about this Privacy Policy, please contact us through our GitHub profile at https://github.com/IronBill25
+
+By using this Site, you acknowledge that you have read and understood this Privacy Policy.
