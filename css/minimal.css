@@ -310,6 +310,10 @@ footer a:hover {
     }
 }
 
+main { 
+    height: 100%;
+}
+
 /* Content Styling */
 #tos,
 #privacy {
@@ -319,9 +323,10 @@ footer a:hover {
 #tos object,
 #privacy object {
     width: 100%;
-    min-height: 0;
+    min-height: 50vh;
     height: auto;
     overflow: visible;
+    margin:0;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
