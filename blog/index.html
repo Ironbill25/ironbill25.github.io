@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - IronBill25</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .development-message {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .development-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        footer {
+            width: 100%;
+            margin-top: auto;
+            background-color: var(--bg-dark);
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="navbar-nav me-auto" role="menubar">
+                <li class="nav-item"><a href="../index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li class="nav-item"><a href="../index.html#about" class="nav-link" role="menuitem">About</a></li>
+                <li class="nav-item"><a href="../index.html#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active" role="menuitem" aria-current="page">Blog</a></li>
+                <li class="nav-item"><a href="https://github.com/IronBill25" target="_blank" class="nav-link" role="menuitem" aria-label="Visit IronBill25's GitHub profile (opens in new tab)">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="development-message">
+        <div class="development-icon">🚧</div>
+        <h1>Blog Coming Soon</h1>
+        <p class="lead">This section is currently under development.</p>
+        <p>Check back later for updates and new content!</p>
+        <a href="../index.html" class="btn btn-primary mt-3">Return Home</a>
+    </main>
+
+    <footer class="mt-5" role="contentinfo">
+        <div class="container">
+            <p class="text-center mb-2 text-white">&copy; 2025 IronBill25. Built with... uh... a computer. <i class="text-primary"><a href="../tos.html">Terms of Service</a></i> | <i class="text-primary"><a href="../privacy.html">Privacy Policy</a></i></p>
+        </div>
+    </footer>
+
+    <script src="../js/index.js" type="module"></script>
+</body>
+</html>

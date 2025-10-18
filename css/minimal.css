@@ -1,4 +1,4 @@
-/* Minimal CSS for Legal Pages (TOS & Privacy Policy) */
+
 :root {
     --primary-color: #00bcd4;
     --primary-color-rgb: 0, 188, 212;
@@ -46,7 +46,6 @@ body {
     padding: 0 var(--spacing);
 }
 
-/* Navigation */
 .navbar {
     background: var(--bg-color);
     border-bottom: 1px solid var(--border-color);
@@ -123,7 +122,6 @@ body {
     width: 100%;
 }
 
-/* Mobile Navigation */
 .nav-toggle {
     display: none;
     background: none;
@@ -171,7 +169,6 @@ body {
     }
 }
 
-/* Headers */
 header {
     display: flex;
     justify-content: center;
@@ -233,7 +230,6 @@ h1::after {
     transform: none;
 }
 
-/* Main Content */
 main {
     flex: 1;
     padding: 2rem 0 4rem;
@@ -243,7 +239,6 @@ main {
     box-sizing: border-box;
 }
 
-/* Text Styling */
 p, li {
     color: var(--text-muted);
     margin-bottom: 1rem;
@@ -269,7 +264,6 @@ h2::after {
     opacity: 0.5;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem 0;
@@ -289,7 +283,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     :root {
         --spacing: 1rem;
@@ -314,7 +307,6 @@ main {
     height: 100%;
 }
 
-/* Content Styling */
 #tos,
 #privacy {
     height: 100%;
@@ -341,7 +333,6 @@ main {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Print Styles */
 @media print {
     body {
         font-size: 12pt;

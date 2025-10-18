@@ -6,22 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>IronBill25's Website</title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="icon" type="image/svg+xml" href="favicon.svg">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-	<meta name="description" content="IronBill25's website and project websites"> 
-    <meta name="keywords" content="ironbill05, ironbill25">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="description" content="Personal website of IronBill25, a web developer passionate about creating efficient web applications. Explore projects like EUIL and JESX."> 
+    <meta name="keywords" content="web developer, frontend developer, JavaScript, Python, EUIL, JESX, open source, IronBill25, IronBill05">
     <meta name="author" content="IronBill25">
-    <meta property="og:url" content="https://ironbill25.github.io">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ironbill25.github.io">
     <meta property="og:title" content="IronBill25's Website">
-    <meta property="og:description" content="IronBill25's website and project websites">
+    <meta property="og:description" content="Personal website of IronBill25, a web developer passionate about creating efficient web applications.">
     <meta property="og:image" content="https://ironbill25.github.io/favicon.svg">
+    
+    <!-- Twitter (X) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="ironbill25.github.io">
     <meta property="twitter:url" content="https://ironbill25.github.io">
     <meta name="twitter:title" content="IronBill25's Website">
-    <meta name="twitter:description" content="IronBill25's website and project websites">
+    <meta name="twitter:description" content="Personal website of IronBill25, a web developer passionate about creating efficient web applications.">
     <meta name="twitter:image" content="https://ironbill25.github.io/favicon.svg">
 </head>
 
@@ -45,22 +51,26 @@
 			</ul>
 		</div>
 	</nav>
-	<header class="text-center py-4">
-		<h3>"The Web doesn't need a thousand dependencies, it needs sanity." - IronBill25</h3>
-	</header>
+	<header class="text-center py-4" role="banner">
+    <h1 class="h3">IronBill25 - Web Developer</h1>
+    <p class="lead text-info">"The Web doesn't need a thousand dependencies, it needs sanity."</p>
+    <p class="text-muted">Building clean, efficient web applications with modern technologies</p>
+</header>
 
-	<main class="container my-4" role="main" aria-labelledby="about projects">
+	<main class="my-4" role="main" aria-labelledby="about projects">
+		<div class="container" role="region" aria-labelledby="about projects">
 		<section id="about" class="row mb-4" aria-labelledby="about-heading">
 			<div class="col-md-8 mx-auto text-center">
-				<h2 id="about-heading">About Me</h2>
+				<h3 id="about-heading">Hello!</h3>
 				<p class="lead">
-					I'm IronBill25 (also known as IronBill05), an experienced web developer that has a passion
+					I'm IronBill25, a web developer with a passion
 					for coding.
 				</p>
 			</div>
+		</section>
 		<section id="social" class="row mb-4" aria-labelledby="social-heading">
 			<div class="col-md-6 mx-auto">
-				<h2 id="social-heading" class="h4 mb-3">Social</h2>
+				<h3 id="social-heading" class="h4 mb-3">Social Media</h3>
 				<p class="text-muted">Note: I currently don't have many ways for you to contact me. This will change in the near future.</p>
 				<div class="d-flex gap-2 flex-wrap">
 					<a href="https://github.com/IronBill25" target="_blank" class="btn btn-outline-primary" aria-label="Visit IronBill25's GitHub profile (opens in new tab)">
@@ -125,16 +135,42 @@
 					</li>
 			</ul>
 		</section>
+	</div>
+		<section id="about" class="row mb-4" aria-labelledby="about-heading">
+			<div class="col-md-8 mx-auto text-center">
+				<h2 id="about-heading">About Me</h2>
+				<p class="lead text-start">
+					I'm IronBill25 (also known as IronBill05). I'm an experienced web developer that likes to code. I also play a lot of video games. <br> <br>
+					I tend to make JavaScript frameworks and libraries. Sometimes I also make games, but not as often.
+				</p>
+			</div>
+		</section>
 	</main>
 
 	<footer role="contentinfo">
 		<div class="container">
-			<p class="mb-2">&copy; 2025 IronBill25. Built with... uh... a computer. <i class="text-primary"><a href="tos.html">Terms of Service</a></i> | <i class="text-primary"><a href="privacy.html">Privacy Policy</a></i></p>
-			<img src="images/cooldevbadge.png" height="60" alt="Cool Developer Badge" class="opacity-75" />
+			<p class="text-start mb-2 text-white">&copy; 2025 IronBill25. Built with... uh... a computer. <i class="text-primary"><a href="tos.html">Terms of Service</a></i> | <i class="text-primary"><a href="privacy.html">Privacy Policy</a></i></p>
+			<img src="images/cooldevbadge.webp" height="60" alt="Cool Developer Badge" class="opacity-75" />
 		</div>
 	</footer>
 
 	<script src="js/index.js" type="module"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "IronBill25",
+      "url": "https://ironbill25.github.io",
+      "sameAs": [
+        "https://github.com/IronBill25",
+        "https://scratch.mit.edu/users/IronBill05",
+		"https://ironbill05.neocities.org"
+      ],
+      "jobTitle": "Web Developer",
+      "description": "Web developer passionate about creating efficient web applications and open source projects.",
+      "knowsAbout": ["Web Development", "JavaScript", "Python", "Frontend Development"]
+    }
+    </script>
 </body>
 
 </html>
