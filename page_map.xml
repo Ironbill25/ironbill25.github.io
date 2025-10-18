@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://ironbill25.github.io/</loc>
+    <priority>1.0</priority>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ironbill25.github.io/jsxtend-lite/</loc>
+    <priority>0.9</priority>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ironbill25.github.io/games/show-em-negative-mercy/</loc>
+    <priority>0.9</priority>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
