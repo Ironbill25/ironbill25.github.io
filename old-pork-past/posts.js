@@ -18,8 +18,14 @@ catalog.then(data => {
         
         if (postDate > twoWeeksAgo) {
             const post = document.createElement("a");
-            post.className = location.href.includes(title.replace(/\s/g, "-").toLowerCase()) ? "post active" : "post";
-            post.href = `posts/${title.replace(/\s/g, "-").toLowerCase()}`;
+            // Replace spaces with dashes, remove all punctuation except dashes, and convert to lowercase
+            const slug = title
+                .replace(/['"`!@#$%^&*()_+=[\]{};:'"\\|,.<>/?~]/g, '') // Remove all punctuation
+                .replace(/\s+/g, '-') // Replace spaces with single dash
+                .replace(/-+/g, '-') // Replace multiple dashes with single dash
+                .toLowerCase();
+            post.className = location.href.includes(slug) ? "post active" : "post";
+            post.href = `${location.href.includes("posts") ? "../" : ""}posts/${slug}`;
             post.innerHTML = `<div class="title-date"><h3>${title}</h3><p class="date">${dateStr}</p></div><p class="desc">${desc}</p>`;
             aside.appendChild(post);
         }

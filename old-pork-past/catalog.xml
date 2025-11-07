@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalog>
+  <post>
+    <title>Emoticons and Kaomojis</title>
+    <desc>All about emoticons and kaomojis.</desc>
+    <file>posts/emoticons-and-kaomojis.html</file>
+    <date>2025-11-06</date>
+  </post>
+  <post>
+    <title>The Old Pork Past</title>
+    <date>2025-11-05</date>
+    <desc>A post about the Old Pork Past.</desc>
+  </post>
+</catalog>
