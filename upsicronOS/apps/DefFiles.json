@@ -1,0 +1,58 @@
+{
+    "root": {
+        "d": true,
+        "c": {
+            "about.txt": {
+                "d": false,
+                "c": "This is a test file.\n\nUpsicronOS v1.0.0\n\nA simple terminal-like operating system interface built with web technologies.\n\nFeatures:\n- File system navigation\n- Multiple applications\n- Persistent state\n- Keyboard-driven interface"
+            },
+            "test.txt": {
+                "d": false,
+                "c": "This is a test file.\n\nUpsicronOS v1.0.0"
+            },
+            "readme.txt": {
+                "d": false,
+                "c": "Welcome to UpsicronOS!\n\nThis is a demonstration of a web-based terminal interface.\n\nNavigation:\n- Use arrow keys to navigate menus\n- Press Enter to select items\n- Press Escape to go back\n- Use Backspace to navigate up in directories\n\nApplications:\n- Calculator: Basic mathematical operations\n- Notepad: Simple text editing\n- ColorText: Text styling demonstration\n- Files: File system browser\n\nThe system saves your state automatically, so when you return you'll be right where you left off."
+            },
+            "documents": {
+                "d": true,
+                "c": {
+                    "notes.txt": {
+                        "d": false,
+                        "c": "Personal Notes\n============\n\nTODO:\n- Add more file types\n- Implement file editing\n- Add copy/paste functionality\n- Create file search feature\n\nIdeas:\n- Add syntax highlighting for code files\n- Implement file permissions\n- Add file compression\n- Create file sharing system"
+                    },
+                    "todo.txt": {
+                        "d": false,
+                        "c": "Project TODO List\n================\n\nHigh Priority:\n[ ] Fix file scrolling edge cases\n[ ] Add file creation feature\n[ ] Implement file deletion\n[ ] Add file renaming\n\nMedium Priority:\n[ ] Add file search functionality\n[ ] Implement file copy/paste\n[ ] Add file properties viewer\n[ ] Create file preview for images\n\nLow Priority:\n[ ] Add file tagging system\n[ ] Implement file versioning\n[ ] Add file sharing\n[ ] Create file backup system"
+                    },
+                    "projects": {
+                        "d": true,
+                        "c": {
+                            "webapp.txt": {
+                                "d": false,
+                                "c": "Web Application Project\n=======================\n\nTechnologies:\n- HTML5 for structure\n- CSS3 for styling\n- JavaScript for logic\n- LocalStorage for persistence\n\nArchitecture:\n- Modular design with separate classes\n- Event-driven input handling\n- Component-based UI system\n- State management pattern\n\nNext Steps:\n- Add more applications\n- Improve UI/UX\n- Add animations\n- Implement themes"
+                            },
+                            "game.txt": {
+                                "d": false,
+                                "c": "Terminal Game Project\n=====================\n\nGame Concept:\nA text-based adventure game set in a terminal environment.\n\nFeatures to Implement:\n- Room navigation system\n- Item collection mechanics\n- Puzzle solving elements\n- Save/load game state\n- Multiple endings\n\nStory Ideas:\n- Hacker themed adventure\n- System administration simulation\n- AI consciousness exploration\n- Time travel debugging\n\nTechnical Considerations:\n- Complex state management\n- Rich text descriptions\n- Interactive command system\n- Progress tracking"
+                            }
+                        }
+                    }
+                }
+            },
+            "system": {
+                "d": true,
+                "c": {
+                    "config.txt": {
+                        "d": false,
+                        "c": "System Configuration\n=====================\n\nDisplay Settings:\n- Font size: 24px\n- Line height: 24px\n- Max lines: Dynamic\n- Theme: Terminal green\n\nPerformance:\n- Update rate: 60 FPS\n- Input polling: Active\n- State persistence: Enabled\n- Debug mode: Disabled\n\nStorage:\n- LocalStorage quota: 5MB\n- Auto-save interval: On change\n- Compression: Disabled\n- Encryption: Not implemented"
+                    },
+                    "logs.txt": {
+                        "d": false,
+                        "c": "System Logs\n===========\n\n[2024-01-15] System initialized\n[2024-01-15] Display system ready\n[2024-01-15] Input handlers registered\n[2024-01-15] Applications loaded\n[2024-01-15] State persistence enabled\n[2024-01-15] File system initialized\n[2024-01-15] Calculator app loaded\n[2024-01-15] Notepad app loaded\n[2024-01-15] ColorText app loaded\n[2024-01-15] Files app loaded\n[2024-01-15] All systems operational\n\nRecent Activity:\n- User navigation: Files app\n- File access: about.txt\n- Scroll position: Line 1-5\n- Session duration: 5 minutes\n- Last action: File viewing"
+                    }
+                }
+            }
+        }
+    }
+}

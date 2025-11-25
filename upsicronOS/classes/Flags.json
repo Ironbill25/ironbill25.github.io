@@ -1,0 +1,27 @@
+{
+  "$@color": {
+    "type": "style",
+    "parse": "kv",
+    "css": { "property": "color", "value": "#value" }
+  },
+  "$@background": {
+    "type": "style",
+    "parse": "kv",
+    "css": { "property": "background-color", "value": "#value" }
+  },
+  "$@bold": {
+    "type": "style",
+    "parse": "none",
+    "css": { "property": "font-weight", "value": "bold" }
+  },
+  "$@italic": {
+    "type": "style",
+    "parse": "none",
+    "css": { "property": "font-style", "value": "italic" }
+  },
+  "$@underline": {
+    "type": "style",
+    "parse": "none",
+    "css": { "property": "text-decoration", "value": "underline" }
+  }
+}
