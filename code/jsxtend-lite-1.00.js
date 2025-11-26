@@ -119,7 +119,7 @@ class JSxtend {
       resizable = true,
       draggable = true,
       closable = true,
-      minimizable = false,
+      minimizable = true,
       modal = false,
       minWidth = 200,
       minHeight = 150,
