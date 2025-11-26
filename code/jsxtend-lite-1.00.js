@@ -163,6 +163,16 @@ class JSxtend {
 
     header.appendChild(titleEl);
 
+    if (minimizable) {
+      const minimizeBtn = document.createElement("div");
+      minimizeBtn.className = "jsx-window-minimize";
+      minimizeBtn.innerHTML = "−";
+      minimizeBtn.onclick = () => {
+        windowEl.classList.toggle("jsx-window-minimized");
+      };
+      header.appendChild(minimizeBtn);
+    }
+
     if (closable) {
       const closeBtn = document.createElement("div");
       closeBtn.className = "jsx-window-close";
@@ -175,16 +185,6 @@ class JSxtend {
         onClose?.();
       };
       header.appendChild(closeBtn);
-    }
-
-    if (minimizable) {
-      const minimizeBtn = document.createElement("div");
-      minimizeBtn.className = "jsx-window-minimize";
-      minimizeBtn.innerHTML = "−";
-      minimizeBtn.onclick = () => {
-        windowEl.classList.toggle("jsx-window-minimized");
-      };
-      header.appendChild(minimizeBtn);
     }
 
     // Create content area
@@ -710,6 +710,13 @@ const windowstyle = `
         text-overflow: ellipsis;
     }
     .jsx-window-close {
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 1.2em;
+        line-height: 1;
+    }
+    
+    .jsx-window-minimize {
         cursor: pointer;
         margin-left: 10px;
         font-size: 1.2em;
