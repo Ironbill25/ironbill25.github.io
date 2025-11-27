@@ -1,0 +1,12 @@
+# Ironbill25 GitHub Pages
+
+> A personal GitHub Pages site hosted at ironbill25.github.io. Includes personal projects, blogs, and documentation.
+
+## Summary
+
+This site hosts my personal projects, blogs, and documentation.
+It contains some of my games and it has many code libraries.
+
+## Main Pages
+
+- [Home](/) — The main landing page of the site  
