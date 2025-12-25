@@ -1,4 +1,6 @@
-import { $, $1 } from "./common.js";
+function $1(args) {
+	return document.querySelector(args[0]);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 	const themeToggle = document.getElementById('theme-toggle');
@@ -70,6 +72,10 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
             navToggle?.setAttribute('aria-expanded', 'false');
         }
     });
+});
+
+document.querySelector('.announcement-banner .closebtn')?.addEventListener('click', () => {
+    document.querySelector('.announcement-banner')?.classList.add('hidden');
 });
 
 let lastScroll = 0;

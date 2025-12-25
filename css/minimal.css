@@ -348,4 +348,8 @@ main {
     main {
         padding: 0;
     }
+
+    .announcement-banner {
+        display: none;
+    }
 }
