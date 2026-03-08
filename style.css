@@ -435,6 +435,70 @@ section:hover:not(:has(.card:hover)):not(:has(section:hover)) {
 	transition: all var(--transition-normal);
 }
 
+.badgegroup {
+	display: flex;
+	height:fit-content;
+	text-wrap:nowrap;
+	gap: var(--spacing-sm);
+	max-width: 200px;
+	overflow-x:auto;
+	background:white;
+	padding:2px;
+	height:3em;
+	overflow-y:hidden;
+}
+
+.textbadge {
+	display: inline-block;
+	font-size: var(--font-size-sm);
+	border:1px solid black;
+	background:white;
+	color:black;
+	padding:2px;
+	height:2rem;
+}
+
+.footertext {
+	margin-top: var(--spacing-lg);
+	color:white;
+}
+.footertext p {
+	color:white !important;
+}
+
+#randommessage {
+	padding-bottom:2px;
+}
+
+#randommessagebtn {
+	background-color: black;
+	color:white;
+	padding:2px;
+	margin-right:0.4rem;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+	height:1.7rem;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-primary);
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-primary-hover);
+}
+
+
 .card:hover {
 	transform: translateY(-5px);
 	box-shadow: var(--shadow-lg);
