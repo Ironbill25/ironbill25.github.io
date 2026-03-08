@@ -2,8 +2,8 @@
 
 :root {
 	
-	--color-primary: #00bcd4;
-	--color-primary-hover: #0097a7;
+	--color-primary: #d43100;
+	--color-primary-hover: #a75900;
 	--color-secondary: #ff6b6b;
 	--color-accent: #4ecdc4;
 	--color-success: #51cf66;
@@ -21,7 +21,7 @@
 	--bg-darker: #16213e;
 	--bg-light: #f8f9fa;
 	--bg-white: #ffffff;
-	--bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	--bg-gradient: linear-gradient(135deg, #8ad412 0%, #4b7ba2 100%);
 	
 	
 	--spacing-xs: 0.5rem;
@@ -54,10 +54,10 @@
 	--shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
 	
 	
-	--radius-sm: 0.375rem;
-	--radius-md: 0.5rem;
-	--radius-lg: 0.75rem;
-	--radius-xl: 1rem;
+	--radius-sm: 0;
+	--radius-md: 0.125rem;
+	--radius-lg: 0.25rem;
+	--radius-xl: 0.5rem;
 	
 	
 	--dark-bg-primary: #0f0f23;
@@ -75,8 +75,8 @@
 	--color-text-muted: var(--dark-text-muted);
 	--bg-light: var(--dark-bg-primary);
 	--bg-white: var(--dark-bg-secondary);
-	--color-primary: #4ecdc4;
-	--color-primary-hover: #45b7b8;
+	--color-primary: #81231c;
+	--color-primary-hover: #6b1a15;
 	--card-bg: var(--dark-bg-secondary);
 	--card-border: rgba(255, 255, 255, 0.1);
 	--btn-primary-bg: var(--color-primary);
@@ -423,7 +423,7 @@ section:hover:not(:has(.card:hover)):not(:has(section:hover)) {
 .card {
 	background-color: var(--bg-white);
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: var(--radius-lg);
+	border-radius: var(--radius-md);
 	box-shadow: var(--shadow-sm);
 	transition: all var(--transition-normal);
 	overflow: hidden;
@@ -458,7 +458,7 @@ section:hover:not(:has(.card:hover)):not(:has(section:hover)) {
 }
 
 .card-body {
-	padding: var(--spacing-md);
+	padding: var(--spacing-sm);
 }
 
 .card-title {
