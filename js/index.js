@@ -151,6 +151,15 @@ if (lastUpdated) {
   lastUpdated.textContent = new Date().toLocaleString();
 }
 
+function generateRandomNumber() {
+  const randomNumber = document.getElementById("random-number");
+  if (randomNumber) {
+    randomNumber.textContent = Math.floor(Math.random() * 10000000);
+  }
+}
+
+generateRandomNumber();
+
 function generateRandomMessage() {
   const randomMessage = document.getElementById("randommessage-text");
   if (randomMessage) {

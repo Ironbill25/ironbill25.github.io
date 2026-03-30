@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainclick {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.mainclick:hover:active {
+  /*cant believe i had to do that*/
+  background-color: #ccc;
+}
+
+.mainclick span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.btncontainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  height: 3.5rem;
+  border: 1px solid #000;
+  padding: 0;
+  border-radius: 50px;
+}
+
+.circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  color: #000;
+  user-select: none;
+  background-clip: padding-box;
+}
+
+.circle:hover {
+  background-color: #ddd;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.btncontainer .circle:first-child {
+  border-left: none;
+}
+
+.btncontainer .circle:last-child {
+  border-right: none;
+}
+
+.menu {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn:active {
+  background-color: #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  background-color: #e4cdcd;
+  border: 1px solid #c4a4a4;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  user-select: none;
+}
+
+.modalheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.modalheader h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modalheader button {
+  margin-left: auto;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+.upgrade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.upgrade-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.upgrade-info p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.buy-btn:disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.buy-btn:not(:disabled):hover {
+  background-color: #ccc;
+}
+
+.ctrlgroup {
+  display: flex;
+  width: fit-content;
+  margin: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.danger {
+  background-color: #ff4444;
+  color: #fff;
+}
+
+.danger:hover {
+  background-color: #ff0000;
+}
+
+.fileinput {
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.fileinput::file-selector-button {
+  margin-right: 0.5rem;
+  background-color: #dfdfdf;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.fileinput::file-selector-button:hover {
+  background-color: #d0d0d0;
+}
+
+.achievement {
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.achievement.unlocked {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #45a049;
+}
+
+.achievement.locked {
+  background-color: #e0e0e0;
+  color: #999;
+  border-color: #ccc;
+}
+
+.achievement h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.achievement p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.achievement-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28582a;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #1a3d1c;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 10000;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.dark-theme {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.dark-theme .contain {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-theme .btn {
+  background-color: #3d3d3d;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-theme .btn:hover {
+  background-color: #4d4d4d;
+}
+
+.dark-theme .btn:active {
+  background-color: #2d2d2d;
+}
+
+.dark-theme .circle {
+  background-color: #3d3d3d;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-theme .circle:hover {
+  background-color: #4d4d4d;
+}
+
+.dark-theme .btncontainer {
+  border-color: #555;
+}
+
+.dark-theme .upgrade-item {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-theme .upgrade-info p {
+  color: #aaa;
+}
+
+.dark-theme .buy-btn:disabled {
+  background-color: #2d2d2d;
+  color: #666;
+}
+
+.dark-theme .modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dark-theme .ctrlgroup {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-theme .fileinput {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-theme .fileinput::file-selector-button {
+  background-color: #3d3d3d;
+  border-color: #555;
+  color: #fff;
+}
+
+.dark-theme .fileinput::file-selector-button:hover {
+  background-color: #4d4d4d;
+}

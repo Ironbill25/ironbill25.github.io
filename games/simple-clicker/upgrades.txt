@@ -1,0 +1,25 @@
+Name: Better Mouse
+Desc: A better mouse! Increases click power by 1
+Cost: 10
+Func: clickPower += 1
+===
+Name: Auto Clicker
+Desc: A simple automatic clicker. Generates 1 point per second
+Cost: 50
+Func: pointsPerSecond += 1
+===
+Name: Stone Mouse
+Desc: Back from the Stone Age. Increases click power by 5
+Cost: 200
+Func: clickPower += 5
+===
+Name: Clicker Contraption
+Desc: An odd looking contraption that generates 5 points per second
+Cost: 500
+Func: pointsPerSecond += 5
+===
+Name: Copper Clicker
+Desc: A decent mouse. +10 points per click
+Cost: 1000
+Func: clickPower += 10
+===

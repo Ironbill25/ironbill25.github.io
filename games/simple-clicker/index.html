@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Clicker - IronBill25's Website</title>
+    <link rel="stylesheet" href="clicker.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="A simple clicker game. Click the button to earn points, then use them to buy upgrades. Quite relaxing."
+    />
+    <meta
+      name="keywords"
+      content="simple clicker, clicker game, relaxing game, idle game"
+    />
+    <meta name="author" content="IronBill25" />
+    <meta name="robots" content="index, follow" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- holy div soup -->
+    <main>
+      <h1>simple clicker</h1>
+      <div class="contain">
+        <div class="btncontainer">
+          <button class="circle mainclick"><span>+</span></button>
+          <span class="circle pointsdisplay">0</span>
+        </div>
+      </div>
+      <div class="flexrow">
+        <div class="menu contain">
+          <div class="shopcontainer" x-data="{ open: false }">
+            <button class="shopopen btn" @click="open = !open">Shop</button>
+            <div
+              class="shop modal"
+              x-show="open"
+              x-cloak
+              @click.outside="open = false"
+            >
+              <div class="modalcontent contain">
+                <div class="modalheader">
+                  <h2>Shop</h2>
+                  <button class="closebtn btn" @click="open = false">×</button>
+                </div>
+                <div class="shopitems">
+                  <div class="error">
+                    No items available, wait a bit. If it still doesn't load,
+                    try refreshing the page.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="settingscontainer" x-data="{ open: false }">
+            <button class="settingsopen btn" @click="open = !open">Settings</button>
+            <div
+              class="settings modal"
+              x-show="open"
+              x-cloak
+              @click.outside="open = false"
+            >
+              <div class="modalcontent contain">
+                <div class="modalheader">
+                  <h2>Settings</h2>
+                  <button class="closebtn btn" @click="open = false">×</button>
+                </div>
+                <div class="settingscontent">
+                  <div class="setting ctrlgroup">
+                    <label for="dark">Dark theme</label>
+                    <input type="checkbox" id="dark" />
+                  </div>
+                  <div class="setting ctrlgroup">
+                    <label for="reset">Reset</label>
+                    <button class="btn danger" id="reset">Reset</button>
+                  </div>
+                  <div class="setting ctrlgroup">
+                    <label for="export">Export</label>
+                    <button class="btn" id="export">Export</button>
+                  </div>
+                  <div class="setting ctrlgroup">
+                    <label for="import">Import</label>
+                    <button class="btn" id="import">Import</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="achievementscontainer" x-data="{ open: false }">
+            <button class="achievementsopen btn" @click="open = !open">Achievements</button>
+            <div
+              class="achievements modal"
+              x-show="open"
+              x-cloak
+              @click.outside="open = false"
+            >
+              <div class="modalcontent contain">
+                <div class="modalheader">
+                  <h2>Achievements</h2>
+                  <button class="closebtn btn" @click="open = false">×</button>
+                </div>
+                <div class="achievements"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contain menu">
+          <h2>Stats</h2>
+          <div class="stats"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="clicker.js" type="module"></script>
+  </body>
+</html>

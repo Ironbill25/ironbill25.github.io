@@ -1,0 +1,24 @@
+Name: Starting Off
+Desc: Click the mouse for the first time.
+Cond: clicks >= 1
+===
+Name: Ten Clicks
+Desc: Click the mouse ten times.
+Cond: clicks >= 10
+===
+Name: First Upgrade
+Desc: Buy your first upgrade.
+Cond: upgradesBought >= 1
+===
+Name: Five Minutes
+Desc: Play for five minutes.
+Cond: timePlayed >= 300
+===
+Name: Fifteen Minutes
+Desc: Play for fifteen minutes.
+Cond: timePlayed >= 900
+===
+Name: Addicted
+Desc: Play for one hour.
+Cond: timePlayed >= 3600
+===
