@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScratchJS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="ScratchJS - An extension for Scratch that adds over 190 new blocks to the editor!"
+    />
+  </head>
+  <body>
+    <h1>ScratchJS</h1>
+    <p>
+      ScratchJS is an extension for Scratch that adds a load of new blocks to
+      the editor.
+    </p>
+    <p>
+      <a id="link"
+        >Drag this link to your bookmarks bar and click it on any project page
+        to load the extension!</a
+      >
+    </p>
+    <p>ScratchJS works as a bookmarklet, which is a special bookmark that runs code instead of visiting a website.<br>
+    This extension works by injecting a script into the page that registers an extension into the Scratch editor.<br>
+    </p>
+    <p class="notice">We're currently looking for developers that know JavaScript to help us develop ScratchJS with new blocks and features!<br>
+    <a href="https://scratch.mit.edu/studios/51504160/">Join our Scratch studio to help</a> or <a href="https://github.com/Ironbill25/JavaScript-For-Scratch">contribute on GitHub</a></p>
+    <p>Thanks to everybody who has helped us develop ScratchJS!</p>
+    <p><a href="/">Back to home</a></p>
+    <script>
+      document.querySelector("#link").href = `
+        javascript:(async()=>{try{const t=await fetch("https://cdn.jsdelivr.net/gh/Ironbill25/JavaScript-For-Scratch@refs/heads/main/scratchjs.js");if(!t.ok)throw new Error("Fetch failed: "+t.status);const c=await t.text(),e=document.createElement("script");e.textContent=c,document.body.appendChild(e),console.log("%c[ScratchJS]%c Script loaded and executed!","color: lime;","color: none;")}catch(t){console.error("[ScratchJS] Failed to load script:",t)}})();`;
+    </script>
+  </body>
+</html>
