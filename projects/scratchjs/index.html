@@ -11,24 +11,109 @@
     />
   </head>
   <body>
-    <h1>ScratchJS</h1>
-    <p>
-      ScratchJS is an extension for Scratch that adds a load of new blocks to
-      the editor.
-    </p>
-    <p>
-      <a id="link"
-        >Drag this link to your bookmarks bar and click it on any project page
-        to load the extension!</a
-      >
-    </p>
-    <p>ScratchJS works as a bookmarklet, which is a special bookmark that runs code instead of visiting a website.<br>
-    This extension works by injecting a script into the page that registers an extension into the Scratch editor.<br>
-    </p>
-    <p class="notice">We're currently looking for developers that know JavaScript to help us develop ScratchJS with new blocks and features!<br>
-    <a href="https://scratch.mit.edu/studios/51504160/">Join our Scratch studio to help</a> or <a href="https://github.com/Ironbill25/JavaScript-For-Scratch">contribute on GitHub</a></p>
-    <p>Thanks to everybody who has helped us develop ScratchJS!</p>
-    <p><a href="/">Back to home</a></p>
+    <main>
+      <h1>ScratchJS</h1>
+      <p>
+        ScratchJS is an extension for Scratch that adds a <i>load</i> of new
+        blocks to the editor.
+      </p>
+      <p>
+        Drag this link to your bookmarks bar and click it to load the extension
+        on any project page: <br />
+        <a id="link">ScratchJS</a>
+      </p>
+      <p>
+        <details>
+          <summary>How it works</summary>
+          ScratchJS works as a bookmarklet, which is a special bookmark that
+          runs code instead of visiting a website.<br />
+          This extension works by injecting a script into the page that
+          registers an extension into the Scratch editor.<br />
+        </details>
+      </p>
+      <div class="notice">
+        <h3>How to contribute!</h3>
+        <p>
+          We're currently looking for developers that know JavaScript to help us
+          develop ScratchJS with new blocks and features!
+        </p>
+        <a href="https://scratch.mit.edu/studios/51504160/"
+          >Join our Scratch studio to help</a
+        >
+        or
+        <a href="https://github.com/Ironbill25/JavaScript-For-Scratch"
+          >contribute on GitHub</a
+        >
+      </div>
+      <h3>Status</h3>
+      <p>
+        The extension currently has 190+ blocks and 22 categories.
+        <small>as of April 2026</small>
+      </p>
+      <h3>Categories</h3>
+      <p>The extension has 22 categories.</p>
+      <details>
+        <summary>Click to see categories</summary>
+        <ul>
+          <li>Math</li>
+          <li>Constants</li>
+          <li>Booleans</li>
+          <li>Strings</li>
+          <li>Special reporters</li>
+          <li>Core JS Blocks</li>
+          <li>Console</li>
+          <li>Control Flow</li>
+          <li>Storage</li>
+          <li>Utilities</li>
+          <li>Temporary Variables</li>
+          <li>Arrays</li>
+          <li>Objects</li>
+          <li>Data</li>
+          <li>Games</li>
+          <li>Date and Time</li>
+          <li>Statistics</li>
+          <li>Browser</li>
+          <li>Color</li>
+          <li>Input</li>
+          <li>Timing</li>
+          <li>And More...</li>
+        </ul>
+      </details>
+      <h3>FAQ</h3>
+      <details>
+        <summary>What is ScratchJS?</summary>
+        <p>
+          ScratchJS is an extension for Scratch that adds new blocks to the
+          editor.
+        </p>
+      </details>
+      <details>
+        <summary>The extension isn't loading.</summary>
+        <p>
+          Try refreshing the page and clicking the bookmark again. If this
+          doesn't work, check your internet connection. <br />
+          If you're still having issues, there could be something like a filter
+          blocking the extension.<br />
+          If you can, whitelist <code>jsdelivr.net</code> on your browser or
+          filter, and make sure that <code>javascript:</code> URLs are allowed.
+        </p>
+      </details>
+      <details>
+        <summary>The blocks aren't working.</summary>
+        <p>
+          Try the actions above, and if the blocks still are not working, there
+          could be an issue with the extension. <br />
+          If so, please report it on our
+          <a href="https://github.com/Ironbill25/JavaScript-For-Scratch/issues"
+            >GitHub issues page</a
+          >.
+        </p>
+      </details>
+      <p>Thanks to everybody who has helped us develop ScratchJS!</p>
+    </main>
+    <footer>
+      <p><a href="/">Back to home</a></p>
+    </footer>
     <script>
       document.querySelector("#link").href = `
         javascript:(async()=>{try{const t=await fetch("https://cdn.jsdelivr.net/gh/Ironbill25/JavaScript-For-Scratch@refs/heads/main/scratchjs.js");if(!t.ok)throw new Error("Fetch failed: "+t.status);const c=await t.text(),e=document.createElement("script");e.textContent=c,document.body.appendChild(e),console.log("%c[ScratchJS]%c Script loaded and executed!","color: lime;","color: none;")}catch(t){console.error("[ScratchJS] Failed to load script:",t)}})();`;
