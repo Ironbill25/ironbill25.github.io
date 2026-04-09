@@ -17,10 +17,14 @@
         ScratchJS is an extension for Scratch that adds a <i>load</i> of new
         blocks to the editor.
       </p>
+      <h2>Get ScratchJS</h2>
       <p>
-        Drag this link to your bookmarks bar and click it to load the extension
-        on any project page: <br />
-        <a id="link">ScratchJS</a>
+        <p>Drag this link to your bookmarks bar: <a id="link">ScratchJS</a></p>
+        <p>Or, copy the following code into a new bookmark:</p>
+        <div class="code-group">
+          <button id="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#242424"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/></svg></button>
+          <code id="code"></code>
+        </div>
       </p>
       <p>
         <details>
@@ -45,15 +49,13 @@
           >contribute on GitHub</a
         >
       </div>
-      <h3>Status</h3>
+      <h2>Status</h2>
       <p>
         The extension currently has 190+ blocks and 22 categories.
         <small>as of April 2026</small>
       </p>
-      <h3>Categories</h3>
-      <p>The extension has 22 categories.</p>
-      <details>
-        <summary>Click to see categories</summary>
+      <details class="btn-drop">
+        <summary>Categories</summary>
         <ul>
           <li>Math</li>
           <li>Constants</li>
@@ -79,7 +81,14 @@
           <li>And More...</li>
         </ul>
       </details>
-      <h3>FAQ</h3>
+      <h2>Quick Links</h2>
+        <ul>
+          <li><a href="https://scratch.mit.edu/studios/51504160/">Scratch Studio</a></li>
+          <li><a href="https://github.com/Ironbill25/JavaScript-For-Scratch">GitHub</a></li>
+          <li><a href="https://github.com/Ironbill25/JavaScript-For-Scratch/issues">Issues</a></li>
+          <li><a href="https://scratch.mit.edu/projects/1291941392/">Demo Project</a></li>
+        </ul>
+      <h2>FAQ</h2>
       <details>
         <summary>What is ScratchJS?</summary>
         <p>
@@ -114,9 +123,6 @@
     <footer>
       <p><a href="/">Back to home</a></p>
     </footer>
-    <script>
-      document.querySelector("#link").href = `
-        javascript:(async()=>{try{const t=await fetch("https://cdn.jsdelivr.net/gh/Ironbill25/JavaScript-For-Scratch@refs/heads/main/scratchjs.js");if(!t.ok)throw new Error("Fetch failed: "+t.status);const c=await t.text(),e=document.createElement("script");e.textContent=c,document.body.appendChild(e),console.log("%c[ScratchJS]%c Script loaded and executed!","color: lime;","color: none;")}catch(t){console.error("[ScratchJS] Failed to load script:",t)}})();`;
-    </script>
+      <script src="js.js"></script>
   </body>
 </html>
