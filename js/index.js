@@ -196,7 +196,12 @@ function generateRandomMessage() {
       "I STILL wonder if anybody reads these.",
       "Tornadoes and hurricanes... what's the diff?",
       "*throws a cucumber at you*",
-      "Watermelons are like 90% water, why aren't there psuedowatermelons with 50% water?"
+      "Watermelons are like 90% water, why aren't there psuedowatermelons with 50% water?",
+      "How many people do you think have lied to you in your life? Probably a lot.",
+      "How come you can throw a chair at the sky but not at the ground?",
+      "Wait, what, wait, wait, keep waiting... waiter... wait... what... *BOOM* ...well that was boring.",
+      "Do you ever stare at your alarm clock watching the minutes go by, counting the seconds... and before you know it, it's 2 in the morning!",
+      "Ah, yes, the c̶̛̥̲̱̦̘̈̆͑̆͂̀̏̔̅͝͠ͅa̵̧͕̱͓̔̚k̵̨̖̫̞͇̘͎͉̩̲̀̒̀̄̿͊͂̕͘͠͠͝e̸̡̡̮͎͖̣̠͓͂̆̆̈́͆͑͂̽͋̈́̒͋̌͐̀͝ that is a ľ̵̜̹̮̮̓͋̿i̵̛̺̮͆̒ē̵͕͉̃̍̀"
     ];
     messages.push("This text has a 1 in " + messages.length + " chance of appearing");
     randomMessage.textContent = messages[Math.floor(Math.random() * messages.length)];
