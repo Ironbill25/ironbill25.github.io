@@ -40,15 +40,29 @@
 			<path d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"/>
 		</svg>
 	</button>
-	<nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Main navigation">
-		<div class="container">
-			<ul class="navbar-nav me-auto" role="menubar">
-				<li class="nav-item"><a href="index.html" class="nav-link" role="menuitem" aria-current="page">Home</a></li>
-				<li class="nav-item"><a href="#about" class="nav-link" role="menuitem">About</a></li>
-				<li class="nav-item"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
-				<li class="nav-item"><a href="https://github.com/IronBill25" target="_blank" class="nav-link" role="menuitem" aria-label="Visit IronBill25's GitHub profile (opens in new tab)" rel="noopener noreferrer">GitHub</a></li>
-			</ul>
-		</div>
+	<nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+    	<div class="container">
+        	<ul class="navbar-nav me-auto">
+            	<li class="nav-item">
+                	<a href="index.html" class="nav-link" aria-current="page">Home</a>
+            	</li>
+        	    <li class="nav-item">
+    	            <a href="#about" class="nav-link">About</a>
+	            </li>
+            	<li class="nav-item">
+        	        <a href="#projects" class="nav-link">Projects</a>
+    	        </li>
+	            <li class="nav-item">
+                	<a href="https://github.com/IronBill25"
+            	       target="_blank"
+        	           class="nav-link"
+    	               aria-label="Visit IronBill25's GitHub profile (opens in new tab)"
+	                   rel="noopener noreferrer">
+                    	GitHub
+                	</a>
+            	</li>
+        	</ul>
+    	</div>
 	</nav>
 	<header class="text-center" role="banner">
 		<div class="announcement-banner">
@@ -62,7 +76,7 @@
 		<div class="container" role="region" aria-labelledby="about projects">
 		<section id="about-short" class="row mb-4" aria-labelledby="about-heading">
 			<div class="col-md-8 mx-auto text-center">
-				<h3 id="about-heading">Hello!</h3>
+				<h2 id="lead-heading">Hello!</h3>
 				<p class="lead">
 					I'm IronBill25, a web developer with a passion
 					for coding.
@@ -214,7 +228,7 @@
 			<p class="text-start mb-2 text-white">&copy; 2025 IronBill25. Built with... uh... a computer. <i class="text-primary"><a href="tos.html">Terms of Service</a></i> | <i class="text-primary"><a href="privacy.html">Privacy Policy</a></i></p>
 			<img src="images/cooldevbadge.webp" height="60" alt="Made by a Cool Dev" class="opacity-75" />
 			<iframe src="https://incr.easrng.net/badge?key=ironbill25site" style="background: url(https://incr.easrng.net/bg.gif)" title="increment me" width="88" height="31" frameborder="0" crossorigin="anonymous"></iframe>
-			<img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fironbill25.github.io&label=total+viewer+count&icon=eye&color=%23198754&message=&style=flat&tz=UTC">
+			<img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fironbill25.github.io&label=total+viewer+count&icon=eye&color=%23198754&message=&style=flat&tz=UTC" alt="Page view counter">
 			<img src="hundredpercent certified cool.gif" alt="this website is 100% certified cool" />
 			<span class="textbadge" id="randommessage"><button onclick="generateRandomMessage()" id="randommessagebtn" title="Click here to get a random message!">#</button><span id="randommessage-text"></span></span>
 			<span class="badgegroup">
