@@ -171,7 +171,7 @@ function generateRandomMessage() {
       "So what's up? Or down. Whatever.",
       "To be or not to be, that isn't the answer.",
       "Who NEEDS planning? Me. And probably you.",
-      "Guess what's depressing?.... buttons.",
+      "Guess what's depressing? ...buttons.",
       "Questions are the key to success and sometimes failure too.",
       "Is it just me or is it super windy outsi-- AAAAAA",
       "Raise your hand if you think this site is still boring",
@@ -199,7 +199,7 @@ function generateRandomMessage() {
       "I STILL wonder if anybody reads these.",
       "Tornadoes and hurricanes... what's the diff?",
       "*throws a cucumber at you*",
-      "Watermelons are like 90% water, why aren't there psuedowatermelons with 50% water?",
+      "Watermelons are like 90% water, why aren't there pseudowatermelons with 50% water?",
       "How many people do you think have lied to you in your life? Probably a lot.",
       "How come you can throw a chair at the sky but not at the ground?",
       "Wait, what, wait, wait, keep waiting... waiter... wait... what... *BOOM* ...well that was boring.",
@@ -210,7 +210,24 @@ function generateRandomMessage() {
       "hmm... Don't you miss when websites used to have popups? Wait, you don't. Neither do I.",
       "uuuuuhhhh, stuff",
       "this site is a certified COFFEE-FREE zone... for the dev, at least",
-      "i bet you don't know what multiplexed array prototype recursion is"
+      "i bet you don't know what multiplexed array prototype recursion is",
+      "What's a nordic poolburger???",
+      "The bees, the bees, the beeEEEEeeeeEEeEEEeaAAAAAAAAA!!!!!",
+      "Mega-nothing, super-nothing",
+      "You have no idea how small yet so big this website is",
+      "Check out my new blog!",
+      "I hand-made this message thing... anyways, press the hashtag to get a new message",
+      "...Really? I didn't know that.",
+      "\"that ain't tuff\" Correct, that isn't tuff, that's granite.",
+      "404 Not Found | nginx",
+      "WHERE IS THAT SEMICOLON?! GET BACK HERE!!!",
+      "i wanna code some torches (definitely not a reference to some coding site)",
+      "Why is everything so fluff. No, seriously, like 99% of text I see is just meaningless fluff",
+      "Scratch that JavaScript!!!",
+      "Why isn't my mouse working!... oh, that's where my hamster went.",
+      "Do you hear that? No? Okay.",
+      "Drumroll please...",
+      "{}[{}]=[] You just got OBJECT'D!"
     ];
     messages.push("This text has a 1 in " + messages.length + " chance of appearing");
     randomMessage.textContent = messages[Math.floor(Math.random() * messages.length)];
