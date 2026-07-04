@@ -87,7 +87,7 @@ document
 
 let lastScroll = 0;
 const header = document.querySelector("header");
-const navHeight = navbar?.offsetHeight || 0;
+
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
@@ -106,7 +106,10 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
+
+let navHeight;
 window.addEventListener("hashchange", () => {
+  navHeight = navheight || navbar?.offsetHeight || 0;
   const hash = window.location.hash;
   if (hash) {
     const element = $1(hash);

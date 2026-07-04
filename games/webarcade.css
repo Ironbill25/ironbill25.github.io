@@ -1,0 +1,16 @@
+html {
+  background-image: none;
+  background: #10a2eb;
+  background: linear-gradient(45deg,rgba(16, 162, 235, 1) 0%, rgba(194, 34, 34, 1) 70%, rgba(237, 85, 85, 1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+body {
+  background: transparent !important;
+}
+
+main li a {
+  color: skyblue;
+}
