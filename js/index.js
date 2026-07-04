@@ -229,7 +229,7 @@ function generateRandomMessage() {
       "Drumroll please...",
       "{}[{}]=[] You just got OBJECT'D!"
     ];
-    messages.push("This text has a 1 in " + messages.length + " chance of appearing");
+    messages.push("This text has a 1 in " + messages.length + 1 + " chance of appearing");
     randomMessage.textContent = messages[Math.floor(Math.random() * messages.length)];
   }
 }
