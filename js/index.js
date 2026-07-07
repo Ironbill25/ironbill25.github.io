@@ -227,9 +227,23 @@ function generateRandomMessage() {
       "Why isn't my mouse working!... oh, that's where my hamster went.",
       "Do you hear that? No? Okay.",
       "Drumroll please...",
-      "{}[{}]=[] You just got OBJECT'D!"
+      "{}[{}]=[] You just got OBJECT'D!",
+      "There are pi types of people: those who understand pi-nary, and those who don't.",
+      "My entire website is about 1 MB... at least, in early July 2026",
+      "this message is now canon in the ironbill universe",
+      "who says i cant eat stuff at night?!",
+      "Don't. Just don't.",
+      "WARNING: A rogue USB cable has been spotted on your desk!",
+      "Safely Remove Hardware: It is now safe to remove your drive.",
+      "Windowns, Mac And Cheese, Luxin",
+      "Water is wet. Unless you manage to isolate a single particle, then it isn't wet.",
+      "Lamp illuminate you!!",
+      "Stop it, drawer, desk, megaexplosion",
+      "DIY Hack: see a weird, large hole in your wall? stick a pipe cleaner or twist tie in it, halfway in, then bend the end to make a hook!",
+      "phones: very phoney",
+      "headphones, redphones, bluephones, head-phony redphones, augh"
     ];
-    messages.push("This text has a 1 in " + messages.length + 1 + " chance of appearing");
+    messages.push("This text has a 1 in " + (messages.length + 1).toString() + " chance of appearing");
     randomMessage.textContent = messages[Math.floor(Math.random() * messages.length)];
   }
 }
