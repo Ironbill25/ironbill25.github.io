@@ -3,12 +3,17 @@ let startbtn = document.querySelector(".play");
 let jumpbtn = document.querySelector(".jump");
 let difficulty = document.querySelector("#difficulty");
 let gamecontainer = document.querySelector("#game");
+let scoreel = document.querySelector("#score");
 
-let game0 = Array(16).fill(".");
-let game1 = Array(16).fill(".");
+let game0, game1, inAir, airTicks;
+
+function init() {
+game0 = Array(16).fill(".");
+game1 = Array(16).fill(".");
 game0[0] = ">";
-let inAir = false;
-let airTicks = 0;
+inAir = false;
+airTicks = 0;
+}
 let gameInterval;
 let score = 0;
 let playing = false;
@@ -49,7 +54,8 @@ function tick() {
 
   let deadtext = dead ? " - You Died! Press Play to try again" : "";
 
-  gameel.textContent = `Score: ${score.toString()}${deadtext}\n\n${game1.join("")}\n${game0.join("")}`;
+  scoreel.textContent = `Score: ${score.toString()}${deadtext}`
+  gameel.textContent = `${game1.join("")}\n${game0.join("")}`;
 }
 
 jumpbtn.addEventListener("click", () => {
@@ -61,6 +67,7 @@ jumpbtn.addEventListener("click", () => {
 
 startbtn.addEventListener("click", () => {
   score = 0;
+  init();
   gameInterval = setInterval(tick, 100 * (5 - difficulty.value));
   playing = true;
   gamecontainer.classList.add("playing");

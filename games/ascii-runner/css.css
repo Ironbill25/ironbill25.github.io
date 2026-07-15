@@ -1,6 +1,10 @@
 body {
   text-align:center;
   font-family:sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 
 #difficultyinput {
@@ -15,4 +19,22 @@ body {
 
 .playing .jump {
   display:inline-block;
+}
+
+#gametext {
+  width:fit-content;
+  border:1px solid #444;
+  padding:5px;
+  padding-bottom: none;
+  border-bottom:2px solid #222;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:1.2rem;
+}
+
+button {
+  margin:1rem;
+  padding:12px;
+  font-size:1.2rem;
 }
