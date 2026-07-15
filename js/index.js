@@ -241,7 +241,10 @@ function generateRandomMessage() {
       "Stop it, drawer, desk, megaexplosion",
       "DIY Hack: see a weird, large hole in your wall? stick a pipe cleaner or twist tie in it, halfway in, then bend the end to make a hook!",
       "phones: very phoney",
-      "headphones, redphones, bluephones, head-phony redphones, augh"
+      "headphones, redphones, bluephones, head-phony redphones, augh",
+      "moo",
+      "If a rock is not a rock, then it isn't a rock",
+      "yo!! yo!! where's my string???"
     ];
     messages.push("This text has a 1 in " + (messages.length + 1).toString() + " chance of appearing");
     randomMessage.textContent = messages[Math.floor(Math.random() * messages.length)];
