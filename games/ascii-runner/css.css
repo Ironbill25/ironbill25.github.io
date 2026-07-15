@@ -1,0 +1,18 @@
+body {
+  text-align:center;
+  font-family:sans-serif;
+}
+
+#difficultyinput {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.jump {
+  display:none;
+}
+
+.playing .jump {
+  display:inline-block;
+}
