@@ -412,7 +412,7 @@ section {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-section:hover:not(:has(.card:hover)):not(:has(section:hover)) {
+section:hover:not(:has(.card)):not(:has(section:hover)) {
 	transform: translateY(-5px);
 	box-shadow: var(--shadow-lg);
 	border-color: var(--color-primary);
@@ -499,7 +499,7 @@ section:hover:not(:has(.card:hover)):not(:has(section:hover)) {
 }
 
 
-.card:hover {
+.card:not(:has(.card)):hover {
 	transform: translateY(-5px);
 	box-shadow: var(--shadow-lg);
 	border-color: var(--color-primary);
