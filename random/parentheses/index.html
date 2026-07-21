@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Close the Parentheses!</title>
+</head>
+<body>
+  <h1>CLOSE THEM!!</h1>
+  <a href="..">Go Back</a>
+  <pre></pre>
+  <button onclick="openparen()">Open</button> <button onclick="closeparen()">Close</button> <button onclick="reset()">Reset</button>
+  <script>
+    let o = 0;
+    let c = 0;
+    let pre = document.querySelector("pre")
+    window.openparen = () => {
+      o++;
+      render();
+    }
+    window.closeparen = () => {
+      c++; // lol
+      render();
+    }
+    window.reset = () => {
+      o = 0;
+      c = 0;
+      render();
+    }
+    function render() {
+      pre.textContent = `Open: ${o} - Closed: ${c} - Difference: ${o-c}\n${"(".repeat(o) + "\n" + ")".repeat(c)}\n\n${o !== c ? "IT'S UNBALANCED!" : "Everything looks alright."}`
+    }
+    render();
+  </script>
+</body>
+</html>
