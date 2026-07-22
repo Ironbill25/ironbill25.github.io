@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Please wait...</title>
+    <style>
+      p {
+        white-space: pre;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Please wait...</p>
+    <p id="load">0% [ ]</p>
+    <p id="message"></p>
+    <script>
+      let counter = 0;
+      let load = 0;
+      setInterval(() => {
+        counter++;
+        if (load !== 99) load++;
+        document.getElementById("load").textContent =
+          `[${"#".repeat(Math.floor(load / 10)) + " ".repeat(Math.floor(10 - Math.floor(load / 10)))}] ${load}%`;
+        if ((counter >= 100 && counter === 150) || (counter > 150 && counter % 100 === 0)) {
+          if (confirm("Program counter.exe is not responding. Do you want to close it?")) {
+            document.body.innerHTML="";
+            document.title = "Closed";
+          }
+        }
+      }, 100);
+    </script>
+  </body>
+</html>

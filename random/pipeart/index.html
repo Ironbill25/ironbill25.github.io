@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOX</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      line-height: 20px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 12px);
+      grid-template-rows: repeat(auto-fill, 20px);
+      width: 100vw;
+      height: 100vh;
+      letter-spacing: -2px;
+    }
+    span {
+      text-align: center;
+      user-select: none;
+      width: 12px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+<script>
+  const box = [
+    "━", "┃", "┏", "┓", "┗", "┛", "┣", "┫", "┳", "┻", "╋"
+  ];
+  const total = (window.innerWidth / 12) * (window.innerHeight / 20);
+  const els = [];
+
+  for (let i = 0; i < total; i++) {
+    let el = document.createElement("span");
+    el.textContent = box[Math.floor(Math.random() * box.length)];
+    document.body.appendChild(el);
+    els.push(el);
+  }
+
+  setInterval(() => {
+    for (let i = 0; i < 30; i++) {
+      let randEl = els[Math.floor(Math.random() * els.length)];
+      if (randEl) {
+        randEl.textContent = box[Math.floor(Math.random() * box.length)];
+      }
+    }
+  }, 40);
+</script>
+</body>
+</html>
