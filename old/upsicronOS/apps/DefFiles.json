@@ -23,7 +23,7 @@
                     },
                     "todo.txt": {
                         "d": false,
-                        "c": "Project TODO List\n================\n\nHigh Priority:\n[ ] Fix file scrolling edge cases\n[ ] Add file creation feature\n[ ] Implement file deletion\n[ ] Add file renaming\n\nMedium Priority:\n[ ] Add file search functionality\n[ ] Implement file copy/paste\n[ ] Add file properties viewer\n[ ] Create file preview for images\n\nLow Priority:\n[ ] Add file tagging system\n[ ] Implement file versioning\n[ ] Add file sharing\n[ ] Create file backup system"
+                        "c": "Project TODO List\n================\n\nHigh Priority:\n[ ] Fix file scrolling edge cases\n[ ] Add file creation feature\n[ ] Implement file deletion\n[ ] Add file renaming\n\nMedium Priority:\n[ ] Add file search functionality\n[ ] Implement file copy/paste\n[ ] Add file properties viewer\n[ ] Create file preview for assets/imgs\n\nLow Priority:\n[ ] Add file tagging system\n[ ] Implement file versioning\n[ ] Add file sharing\n[ ] Create file backup system"
                     },
                     "projects": {
                         "d": true,

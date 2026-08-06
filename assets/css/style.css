@@ -24,11 +24,11 @@
 	--bg-gradient: linear-gradient(135deg, #8ad412 0%, #4b7ba2 100%);
 	
 	
-	--spacing-xs: 0.5rem;
-	--spacing-sm: 1rem;
-	--spacing-md: 2rem;
-	--spacing-lg: 3rem;
-	--spacing-xl: 4rem;
+	--spacing-xs: 0.25rem;
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2rem;
 	
 	
 	--transition-fast: 0.2s;
@@ -249,6 +249,11 @@ body {
 	background-attachment: fixed;
 	background-blend-mode: overlay, overlay, normal, normal, normal;
 	overflow-x:hidden;
+}
+
+#cooldev, #increment {
+  display:inline;
+  margin-right:2rem;
 }
 
 

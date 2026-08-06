@@ -32,7 +32,7 @@ body {
 	line-height: var(--line-height);
 	background-color: var(--bg-light);
 	color: var(--color-text);
-	background-image: url("images/tiles.webp");
+	background-image: url("/assets/imgs/tiles.webp");
 }
 
 nav {
