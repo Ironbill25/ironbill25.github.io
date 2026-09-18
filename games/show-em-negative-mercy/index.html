@@ -167,8 +167,15 @@ main {
         <h1>Uno: Show 'Em Negative Mercy - Free Online Game</h1>
     </header>
     <main>
-        <iframe src="https://turbowarp.org/1205915057/embed" allowtransparency="true"
-            frameborder="true" scrolling="no" allowfullscreen id="gameiframe" loading="lazy"></iframe> <br>
+          <div id="game-wrapper" style="position: relative; display: inline-block;">
+              <div id="game-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1); z-index: 10;">
+                  <button onclick="play()" id="play-btn" style="padding: 15px 30px; font-size: 1.2rem; cursor: pointer; font-weight: bold; border-radius: 8px; border: none; background: #ff3700; color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">Click to Play</button>
+              </div>
+
+              <iframe src="about:blank" data-src="https://turbowarp.org/1205915057/embed" allowtransparency="true"
+                      frameborder="true" scrolling="no" allowfullscreen id="gameiframe"></iframe>
+          </div>
+          <br>
         <div class="game-info">
 			<p>Play UNO Show 'Em Negative Mercy on Scratch/TurboWarp, a fan-made UNO game based on UNO: Show 'Em No Mercy.</p><br>
       <p>This game was made with Scratch and TurboWarp. You can use TurboWarp for better performance. Stacking cards is allowed in this game!</p>
@@ -212,5 +219,18 @@ main {
       <p>&copy; 2025 IronBill25. Built with... uh... a computer. <i class="text-primary"><a href="../../tos.html">Terms of Service</a></i> | <i class="text-primary"><a href="../../privacy.html">Privacy Policy</a></i></p>
   <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fironbill25.github.io%2Fgames%2Fshow-em-negative-mercy%2F&label=total+viewer+count&icon=eye&color=%23198754&message=&style=flat&tz=UTC" alt="Page view counter">
   </footer>
+  <script>
+  window.play = () => {
+      const frame = document.getElementById('gameiframe');
+      const pb = document.getElementById('play-btn');
+      const o = document.getElementById('game-overlay');
+      
+      if (frame && frame.getAttribute('data-src')) {
+          frame.setAttribute('src', frame.getAttribute('data-src'));
+          if (pb) pb.style.display = 'none';
+          if (o) o.style.display = 'none';
+      }
+  };
+  </script>
 </body>
 </html>
