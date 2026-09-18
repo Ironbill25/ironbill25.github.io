@@ -1,236 +1,389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Play Uno: Show 'Em Negative Mercy - Scratch & TurboWarp Game</title>
     <style>
-:root {
-	--color-primary: #00bcd4;
-	--color-primary-hover: #0097a7;
-	--color-text: #333;
-	--color-text-light: #fff;
-	--bg-dark: #222;
-	--bg-darker: #333;
-	--bg-light: #f9f9f9;
+      :root {
+        --color-primary: #00bcd4;
+        --color-primary-hover: #0097a7;
+        --color-text: #333;
+        --color-text-light: #fff;
+        --bg-dark: #222;
+        --bg-darker: #333;
+        --bg-light: #f9f9f9;
 
-	--spacing-xs: 0.5rem;
-	--spacing-sm: 1rem;
-	--spacing-md: 2rem;
+        --spacing-xs: 0.5rem;
+        --spacing-sm: 1rem;
+        --spacing-md: 2rem;
 
-	--transition: 0.3s;
+        --transition: 0.3s;
 
-	--font-family: Arial, sans-serif;
-	--line-height: 1.6;
-}
+        --font-family: Arial, sans-serif;
+        --line-height: 1.6;
+      }
 
-.muted {
-  color: #aaa;
-  opacity: 0.7;
-}
+      .muted {
+        color: #aaa;
+        opacity: 0.7;
+      }
 
-body {
-	font-family: var(--font-family);
-	margin: 0;
-	padding: 0;
-	line-height: var(--line-height);
-	background-color: var(--bg-light);
-	color: var(--color-text);
-	background-image: url("/assets/imgs/tiles.webp");
-}
+      body {
+        font-family: var(--font-family);
+        margin: 0;
+        padding: 0;
+        line-height: var(--line-height);
+        background-color: var(--bg-light);
+        color: var(--color-text);
+        background-image: url("/assets/imgs/tiles.webp");
+      }
 
-nav {
-	background-color: var(--bg-darker);
-	padding: var(--spacing-xs) 0;
-}
+      nav {
+        background-color: var(--bg-darker);
+        padding: var(--spacing-xs) 0;
+      }
 
-.navbar {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-}
+      .navbar {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
 
-.navbar li {
-	margin: 0 var(--spacing-sm);
-}
+      .navbar li {
+        margin: 0 var(--spacing-sm);
+      }
 
-.navbar a {
-	color: var(--color-text-light);
-	text-decoration: none;
-	font-weight: bold;
-	transition: color var(--transition);
-}
+      .navbar a {
+        color: var(--color-text-light);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color var(--transition);
+      }
 
-.navbar a:hover {
-	color: var(--color-primary);
-}
+      .navbar a:hover {
+        color: var(--color-primary);
+      }
 
-header {
-	background-color: var(--bg-dark);
-	color: var(--color-text-light);
-	padding: var(--spacing-md);
-	text-align: center;
-}
+      header {
+        background-color: var(--bg-dark);
+        color: var(--color-text-light);
+        padding: var(--spacing-md);
+        text-align: center;
+      }
 
-main {
-	padding: var(--spacing-md);
-	max-width: 1000px;
-	margin: auto;
-	margin-top: 5px;
-	background: radial-gradient(circle,
-			rgba(0, 0, 0, 0.7) 0%,
-			rgba(0, 0, 0, 0.4) 90%);
-	color: white;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-}
+      main {
+        padding: var(--spacing-md);
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 5px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.4) 90%
+        );
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
 
-footer {
-	background-color: #333;
-	color: #ccc;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-	padding: 1rem;
-	font-size: 0.9rem;
-	height: 30px;
-	position: fixed;
-	top: calc(100vh - 30px - 2rem);
-	left: 0;
-	width: 100vw;
-	padding-left: none;
-	padding-right: none;
-}
+      footer {
+        background-color: #333;
+        color: #ccc;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 1rem;
+        font-size: 0.9rem;
+        height: 30px;
+        position: fixed;
+        top: calc(100vh - 30px - 2rem);
+        left: 0;
+        width: 100vw;
+        padding-left: none;
+        padding-right: none;
+      }
 
-footer a {
-	color: var(--color-primary);
-	text-decoration: none;
-}
+      footer a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
 
-footer a:hover {
-	text-decoration: underline;
-}
+      footer a:hover {
+        text-decoration: underline;
+      }
 
-.game-info {
-	background-color: var(--bg-dark);
-	color: var(--color-text-light);
-	padding: var(--spacing-md);
-}
+      .game-info {
+        background-color: var(--bg-dark);
+        color: var(--color-text-light);
+        padding: var(--spacing-md);
+      }
 
-main {
-	padding-bottom: 8rem;
-}
+      main {
+        padding-bottom: 8rem;
+      }
 
-#gameiframe {
-  aspect-ratio: 482 / 412;
-  width:100%;
-  max-width: 623px;
-  height:auto;
-}</style>
+      #game-wrapper {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+      }
+      #game-wrapper::before {
+        content: "";
+        display: block;
+        padding-top: calc((412 / 482) * 100%);
+      }
+      #gameiframe,
+      #game-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #game-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.2);
+      }
 
-    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-	<meta name="description" content="Play Uno: Show 'Em Negative Mercy, the ultimate free UNO game with brutal house rules, stacking, and custom cards. School-friendly - you can play on Scratch too!">
-	<meta name="keywords" content="uno game, uno no mercy, show em negative mercy, free online game, uno scratch, turbowarp uno, card game, stacking cards, wild draw 16">
-	<meta name="author" content="IronBill25">
-	<meta name="robots" content="index, follow">
-	
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://ironbill25.github.io/games/show-em-negative-mercy/">
-	<meta property="og:title" content="Play Uno: Show 'Em Negative Mercy - Free Online Game">
-	<meta property="og:description" content="Play Uno: Show 'Em Negative Mercy, the ultimate free UNO game with brutal house rules, stacking, and custom cards. School-friendly - you can play on Scratch too!">
-	<meta property="og:image" content="https://ironbill25.github.io/favicon.svg">
+      #play-btn {
+        padding: 5px 8px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+        background: #ff3700;
+        color: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+    </style>
 
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:url" content="https://ironbill25.github.io/games/show-em-negative-mercy/">
-	<meta name="twitter:title" content="Play Uno: Show 'Em Negative Mercy - Free Online Game">
-	<meta name="twitter:description" content="Play Uno: Show 'Em Negative Mercy, the ultimate free UNO game with brutal house rules, stacking, and custom cards. School-friendly - you can play on Scratch too!">
-	<meta name="twitter:image" content="https://ironbill25.github.io/favicon.svg">
-</head>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <meta
+      name="description"
+      content="Play Uno: Show 'Em Negative Mercy, the ultimate free UNO game with brutal house rules, stacking, and custom cards. School-friendly - you can play on Scratch too!"
+    />
+    <meta
+      name="keywords"
+      content="uno game, uno no mercy, show em negative mercy, free online game, uno scratch, turbowarp uno, card game, stacking cards, wild draw 16"
+    />
+    <meta name="author" content="IronBill25" />
+    <meta name="robots" content="index, follow" />
 
-<body>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ironbill25.github.io/games/show-em-negative-mercy/"
+    />
+    <meta
+      property="og:title"
+      content="Play Uno: Show 'Em Negative Mercy - Free Online Game"
+    />
+    <meta
+      property="og:description"
+      content="Play Uno: Show 'Em Negative Mercy, the ultimate free UNO game with brutal house rules, stacking, and custom cards. School-friendly - you can play on Scratch too!"
+    />
+    <meta
+      property="og:image"
+      content="https://ironbill25.github.io/favicon.svg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://ironbill25.github.io/games/show-em-negative-mercy/"
+    />
+    <meta
+      name="twitter:title"
+      content="Play Uno: Show 'Em Negative Mercy - Free Online Game"
+    />
+    <meta
+      name="twitter:description"
+      content="Play Uno: Show 'Em Negative Mercy, the ultimate free UNO game with brutal house rules, stacking, and custom cards. School-friendly - you can play on Scratch too!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://ironbill25.github.io/favicon.svg"
+    />
+  </head>
+
+  <body>
     <nav>
-        <ul class="navbar">
-            <li><a href="../index.html">The IronBill Web Arcade</a></li>
-            <li><a href="../../index.html">Home</a></li>
-        </ul>
+      <ul class="navbar">
+        <li><a href="../index.html">The IronBill Web Arcade</a></li>
+        <li><a href="../../index.html">Home</a></li>
+      </ul>
     </nav>
     <header>
-        <h1>Uno: Show 'Em Negative Mercy - Free Online Game</h1>
+      <h1>Uno: Show 'Em Negative Mercy - Free Online Game</h1>
     </header>
     <main>
-          <div id="game-wrapper" style="position: relative; display: inline-block;">
-              <div id="game-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1); z-index: 10;">
-                  <button onclick="play()" id="play-btn" style="padding: 15px 30px; font-size: 1.2rem; cursor: pointer; font-weight: bold; border-radius: 8px; border: none; background: #ff3700; color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">Click to Play</button>
-              </div>
+      <div id="game-wrapper" style="position: relative; display: inline-block">
+        <div id="game-overlay">
+          <button onclick="play()" id="play-btn">Click to Play</button>
+        </div>
 
-              <iframe src="about:blank" data-src="https://turbowarp.org/1205915057/embed" allowtransparency="true"
-                      frameborder="true" scrolling="no" allowfullscreen id="gameiframe"></iframe>
-          </div>
-          <br>
-        <div class="game-info">
-			<p>Play UNO Show 'Em Negative Mercy on Scratch/TurboWarp, a fan-made UNO game based on UNO: Show 'Em No Mercy.</p><br>
-      <p>This game was made with Scratch and TurboWarp. You can use TurboWarp for better performance. Stacking cards is allowed in this game!</p>
+        <iframe
+          src="about:blank"
+          data-src="https://turbowarp.org/1205915057/embed"
+          allowtransparency="true"
+          frameborder="true"
+          scrolling="no"
+          allowfullscreen
+          id="gameiframe"
+        ></iframe>
+      </div>
+      <br />
+      <div class="game-info">
+        <p>
+          Play UNO Show 'Em Negative Mercy on Scratch/TurboWarp, a fan-made UNO
+          game based on UNO: Show 'Em No Mercy.
+        </p>
+        <br />
+        <p>
+          This game was made with Scratch and TurboWarp. You can use TurboWarp
+          for better performance. Stacking cards is allowed in this game!
+        </p>
 
-      <h2>UNO Negative Mercy Rules</h2>
-      <p>These are the house rules for Show 'Em Negative Mercy:</p>
-      <p>All original rules from UNO: Show 'Em No Mercy apply, but there's also a new rule: <br>
-      <strong>Absolutely No Mercy Rule:</strong> Instead of being kicked out when you have 25+ cards, it takes 50 cards! Extra brutal.</p>
-      <h3>Cards</h3>
-      <p>This game includes all of the cards from Uno: Show 'Em No Mercy, and a few extra:</p>
-      <ul class="card-list">
-          <li><strong>Wild Draw 16</strong> - The next player must draw 16 cards, or stack another Wild Draw 16. Stack this a few times, then the first player that can't stack it loses...</li>
-          <li><strong>Wild Reverse Draw 6</strong> - Reverses the direction of play, then the next player must
-              draw 6 cards, or stack another draw card.</li>
-      </ul>
-			<h2>Frequently Asked Questions</h2>
-			<h3>Is this an official game?</h3>
-			<p>No, Show 'Em Negative Mercy is a fan-made game, not an official UNO game.</p>
-			<h3>Why was Negative Mercy created?</h3>
-			<p>Negative Mercy was created because I just felt that Uno: No Mercy just <em>wasn't brutal enough</em>. You've probably seen those memes with people having over 60 cards in their hand, this is one of those games where that's possible.</p>
-			<h3>Can I play Negative Mercy online or with friends?</h3>
-			<p>Yes, <strong>online multiplayer</strong> is completely supported on the TurboWarp version. However, if you use the Scratch version, you'll have to be signed into Scratch (and not be a New Scratcher) to play multiplayer. You'll also want a decent internet connection. However, we don't currently have <abbr title="Local multiplayer is where many people play this game the same machine.">local multiplayer.</abbr></p>
-			<h3>What is TurboWarp?</h3>
-			<p>TurboWarp is a faster version of Scratch that compiles projects into JavaScript, allowing them to run much faster than they do on Scratch. It is recommended to play on TurboWarp if you have access to it.</p>
-			<h3>Is there an app I can download?</h3>
-			<p>Currently there is not an app, however most browsers like Chrome let you save the page as a web app.</p>
-      <h3>It looks like there was an error loading the page, how do I fix this?</h3>
-      <p>This probably happened because some filter blocked TurboWarp. Try clicking the "Switch to Scratch version" button. Please note that the Scratch version does not have online multiplayer unless you log into Scratch.</p>
-			<br><hr><br>
-      <small>DISCLAIMER: <i>Uno</i> is a registered trademark of Mattel, Inc. This website and the custom Uno game
-          provided here are not affiliated with, sponsored by, or endorsed by Mattel, Inc. in any way. This is a
-          fan-made project created for entertainment and educational purposes only. All trademarks and copyrights
-          belong to their respective owners.
-          <br><br> Note: We do not monitor user activity in real time. Use this site at your own
-          discretion.</small>
-      <br> <br>
-      <button onclick="document.querySelector('#gameiframe').setAttribute('src','https:\/\/scratch.mit.edu/projects/1205915057/embed')" title="Note: You can't play with your friends or other users on the Scratch version unless you both have Scratch accounts with the Scratcher status.">Switch to Scratch version (click this if TurboWarp is blocked)</button>
-    </div>
-  </main>
-  <footer>
-      <p>&copy; 2025 IronBill25. Built with... uh... a computer. <i class="text-primary"><a href="../../tos.html">Terms of Service</a></i> | <i class="text-primary"><a href="../../privacy.html">Privacy Policy</a></i></p>
-  <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fironbill25.github.io%2Fgames%2Fshow-em-negative-mercy%2F&label=total+viewer+count&icon=eye&color=%23198754&message=&style=flat&tz=UTC" alt="Page view counter">
-  </footer>
-  <script>
-  window.play = () => {
-      const frame = document.getElementById('gameiframe');
-      const pb = document.getElementById('play-btn');
-      const o = document.getElementById('game-overlay');
-      
-      if (frame && frame.getAttribute('data-src')) {
-          frame.setAttribute('src', frame.getAttribute('data-src'));
-          if (pb) pb.style.display = 'none';
-          if (o) o.style.display = 'none';
-      }
-  };
-  </script>
-</body>
+        <h2>UNO Negative Mercy Rules</h2>
+        <p>These are the house rules for Show 'Em Negative Mercy:</p>
+        <p>
+          All original rules from UNO: Show 'Em No Mercy apply, but there's also
+          a new rule: <br />
+          <strong>Absolutely No Mercy Rule:</strong> Instead of being kicked out
+          when you have 25+ cards, it takes 50 cards! Extra brutal.
+        </p>
+        <h3>Cards</h3>
+        <p>
+          This game includes all of the cards from Uno: Show 'Em No Mercy, and a
+          few extra:
+        </p>
+        <ul class="card-list">
+          <li>
+            <strong>Wild Draw 16</strong> - The next player must draw 16 cards,
+            or stack another Wild Draw 16. Stack this a few times, then the
+            first player that can't stack it loses...
+          </li>
+          <li>
+            <strong>Wild Reverse Draw 6</strong> - Reverses the direction of
+            play, then the next player must draw 6 cards, or stack another draw
+            card.
+          </li>
+        </ul>
+        <h2>Frequently Asked Questions</h2>
+        <h3>Is this an official game?</h3>
+        <p>
+          No, Show 'Em Negative Mercy is a fan-made game, not an official UNO
+          game.
+        </p>
+        <h3>Why was Negative Mercy created?</h3>
+        <p>
+          Negative Mercy was created because I just felt that Uno: No Mercy just
+          <em>wasn't brutal enough</em>. You've probably seen those memes with
+          people having over 60 cards in their hand, this is one of those games
+          where that's possible.
+        </p>
+        <h3>Can I play Negative Mercy online or with friends?</h3>
+        <p>
+          Yes, <strong>online multiplayer</strong> is completely supported on
+          the TurboWarp version. However, if you use the Scratch version, you'll
+          have to be signed into Scratch (and not be a New Scratcher) to play
+          multiplayer. You'll also want a decent internet connection. However,
+          we don't currently have
+          <abbr
+            title="Local multiplayer is where many people play this game the same machine."
+            >local multiplayer.</abbr
+          >
+        </p>
+        <h3>What is TurboWarp?</h3>
+        <p>
+          TurboWarp is a faster version of Scratch that compiles projects into
+          JavaScript, allowing them to run much faster than they do on Scratch.
+          It is recommended to play on TurboWarp if you have access to it.
+        </p>
+        <h3>Is there an app I can download?</h3>
+        <p>
+          Currently there is not an app, however most browsers like Chrome let
+          you save the page as a web app.
+        </p>
+        <h3>
+          It looks like there was an error loading the page, how do I fix this?
+        </h3>
+        <p>
+          This probably happened because some filter blocked TurboWarp. Try
+          clicking the "Switch to Scratch version" button. Please note that the
+          Scratch version does not have online multiplayer unless you log into
+          Scratch.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <small
+          >DISCLAIMER: <i>Uno</i> is a registered trademark of Mattel, Inc. This
+          website and the custom Uno game provided here are not affiliated with,
+          sponsored by, or endorsed by Mattel, Inc. in any way. This is a
+          fan-made project created for entertainment and educational purposes
+          only. All trademarks and copyrights belong to their respective owners.
+          <br /><br />
+          Note: We do not monitor user activity in real time. Use this site at
+          your own discretion.</small
+        >
+        <br />
+        <br />
+        <button
+          onclick="
+            document
+              .querySelector('#gameiframe')
+              .setAttribute(
+                'src',
+                'https:\/\/scratch.mit.edu/projects/1205915057/embed',
+              )
+          "
+          title="Note: You can't play with your friends or other users on the Scratch version unless you both have Scratch accounts with the Scratcher status."
+        >
+          Switch to Scratch version (click this if TurboWarp is blocked)
+        </button>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 IronBill25. Built with... uh... a computer.
+        <i class="text-primary"
+          ><a href="../../tos.html">Terms of Service</a></i
+        >
+        |
+        <i class="text-primary"
+          ><a href="../../privacy.html">Privacy Policy</a></i
+        >
+      </p>
+      <img
+        src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fironbill25.github.io%2Fgames%2Fshow-em-negative-mercy%2F&label=total+viewer+count&icon=eye&color=%23198754&message=&style=flat&tz=UTC"
+        alt="Page view counter"
+      />
+    </footer>
+    <script>
+      window.play = () => {
+        const frame = document.getElementById("gameiframe");
+        const pb = document.getElementById("play-btn");
+        const o = document.getElementById("game-overlay");
+
+        if (frame && frame.getAttribute("data-src")) {
+          frame.setAttribute("src", frame.getAttribute("data-src"));
+          if (pb) pb.style.display = "none";
+          if (o) o.style.display = "none";
+        }
+      };
+    </script>
+  </body>
 </html>
