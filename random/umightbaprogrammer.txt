@@ -1,0 +1,44 @@
+You Might Be a Programmer or Linuxist If:
+0  - you argue with your math teacher that ++ is a valid operation
+1  - you spend more time finding a semicolon than writing code
+2  - you have more than five cups of coffee a day
+3  - you think the Constitution should have a man page
+4  - you think dog should be a command to send a text file to the printer
+5  - you wrote fifteen pages to your employer about how hexadecimal works in C
+6  - you have a hard drive full of abandoned project ideas that never went past the first week
+7  - you constantly snooze your alarm to start fixing bugs
+8  - your hair is bent in 90° angles from you trying to pull it out
+9  - when you think of pyrite you think of Python interpreters
+10 - you think dashes are better than bullet points
+11 - you believe Windows is unholy
+12 - you try to ssh into your refrigerator
+13 - you spent weeks reverse engineering the Bluetooth protocol
+14 - you try to use grep in Command Prompt
+15 - you just noticed that this list is zero-based
+16 - you got mad at bullet 6
+17 - you've tried to html-ify this text document already
+18 - you tried to wrestle with UART
+19 - you think 101010 is the answer to life
+20 - you just searched bullet 19 on Google to figure out what it meant
+21 - you look at the time, see 4:04 and think "time not found"
+22 - you press CTRL S in a terminal and wonder why everything froze
+23 - you have 14 tabs open to view "essential" documentation
+25 - you call empty space "null"
+26 - you just noticed that bullet 25 skipped a number
+27 - you just looked back at bullet 23 and 25 to confirm bullet 26
+28 - you are up at 3 AM eating breakfast that is grain in a grid pattern
+29 - you have a few boxes full of cables lying around somewhere
+30 - you buy USB hubs because they look cool
+31 - you have a whole library of documentation books
+32 - everybody begs you to touch grass, so you pull up an image of grass on your computer and touch it
+33 - you code on a Raspberry Pi
+34 - you spent a whole day reinstalling packages in a TTY only to realize you had flipped the power switch on the mouse
+35 - you hear 12 and think of the week you spent debugging why the bootloader wouldn't work
+36 - you finally get a different error message and take a break
+37 - you explain to a rubber duck on your desk why it doesn't work
+38 - you just wrote a cron job to display these jokes in a loop once each hour
+39 - you wrote a script to commit and push a bit of text to GitHub instead of copy pasting it
+40 - you think hollywood "hackers" should be portrayed properly
+41 - you wrote a script that listens for you pressing a key on the keypad and opens an application launcher, because you have no use for the keypad
+42 - you see "!!!", think "bang bang bang", and then think of guns
+43 - you tell computers how to be a computer.
