@@ -1,0 +1,13 @@
+Laws of Engineering
+1. Anything that works when you test it will fail when you show it to somebody else.
+2. If it ain't broke, don't fix it.
+3. Dimensions will always be in the least available unit of measurement.
+4. If it's stupid and it works, it isn't stupid.
+5. If something doesn't work, it needs tape. If it already has tape, it needs more.
+6. If it moves and it shouldn't, use duct tape. If it doesn't move and it should, use WD-40.
+7. If it still doesn't work, hit it with a bigger hammer.
+8. A wire will always move away from the strippers.
+9. It will explode when it shouldn't, and won't explode when it should.
+10. No project can be completed without at least three trips to the hardware store.
+11. If a bolt can be cross-threaded, it will be. If it cannot be cross-threaded, it will be stripped instead.
+12. DO NOT LET OUT THE MAGIC SMOKE.
