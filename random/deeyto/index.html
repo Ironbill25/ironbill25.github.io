@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deeyto(x)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    input {
+      width: 100%;
+      padding: 6px;
+      font-size: 1rem;
+      font-family: sans-serif;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #fff;
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 6px;
+    }
+    input:focus {
+      outline: none;
+      border-color: #666;
+    }
+    button {
+      padding: 5px 12px;
+      font-size: 1rem;
+      font-family: sans-serif;
+      background: #222;
+      color: #fff;
+      border: 1px solid #444;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background: #333;
+    }
+    #output {
+      margin-top: 12px;
+      font-size: 2rem;
+      min-height: 1.25rem;
+      color: #fff;
+      transition: color 1s ease-out;
+    }
+    #output.flash {
+      color: #fadb2e;
+      transition: color 0s;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 title="The most mysterious function... one number will unlock the answer.&#10;The answer? We're not telling what.&#10;That's for you to figure out.&#10;There might not even be an answer!">Deeyto(x)</h1>
+    <input type="text" id="xInput" placeholder="Enter x..." autocomplete="off" onkeydown="if(event.key==='Enter')evaluateDeeyto()" />
+    <button onclick="evaluateDeeyto()">Compute</button>
+    <div id="output">0</div>
+  </div>
+
+<script>
+const i="7699f6f2131d9a30086d20d8e8c7a47e",s="ef725f6fb28fc9f5f7c34587",u="c4eb7853be87fda30d3ccfece4ae2916f1e7";function d(t){const n=new Uint8Array(t.length/2);for(let e=0;e<n.length;e++)n[e]=parseInt(t.substr(2*e,2),16);return n}async function y(e,t){const n=new TextEncoder,c=await crypto.subtle.importKey("raw",n.encode(e),"PBKDF2",!1,["deriveKey"]);return crypto.subtle.deriveKey({name:"PBKDF2",salt:t,iterations:1e5,hash:"SHA-256"},c,{name:"AES-GCM",length:256},!1,["encrypt","decrypt"])}async function evaluateDeeyto(){const e=document.getElementById("xInput").value.trim(),t=document.getElementById("output");if(e)try{const n=d(i),c=d(s),a=d(u),r=await y(e,n),o=await crypto.subtle.decrypt({name:"AES-GCM",iv:c},r,a),f=new TextDecoder;t.textContent=f.decode(o)}catch(e){t.textContent="0"}else t.textContent="0";t.classList.add("flash");void t.offsetWidth;t.classList.remove("flash");}
+</script>
+
+</body>
+</html>
